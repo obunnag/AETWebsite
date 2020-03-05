@@ -1,12 +1,94 @@
+<!DOCTYPE html>
 <html>
-
-<head>
-
-</head>
     
-<body>
-    <h1>AET Course Guide</h1>
-    <h2>Yay!</h2>
-</body>
+<head>
+<title>AET Course Guide</title>
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
 
+<style>
+    .fal fa-pen {
+      color: red;
+    }
+</style>
+</head>
+
+<body>
+    <div class="content">
+        
+    <!--Navigation-->
+    <ul class="nav-container">
+        
+        
+        <h3 class="mainTitle">AET Course Guide</h3>
+<!--            <img class="longhornLogo" src="resources/longhorn-logo2.png" alt="Longhorn Logo">-->
+        
+        
+        <li><a class="navnav" href="#Home">Home</a></li>
+        <li><a href="#Instructors">Instructors</a></li>
+        <li class="dropdown">
+            <a href="javascript:void(0)" class="dropbtn">AET Courses</a>
+            <div class="dropdown-content">
+                <a href="#">Digital Visualization</a>
+                <a href="#">Music and Sound</a>
+                <a href="#">Game Design</a>
+                <a href="#">PLAI</a>
+            </div>
+        </li>
+
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Contact Us</a></li>
+        <li>
+            <!-- <i class="fas fa-star"></i> Star Code -->
+            <a class="pen" href="#"><i class="fas fa-pen"></i> Add Review</a>
+        </li>
+    </ul>
+
+
+    <div class="homeContent">
+      <img id="coverImage" src="resources/cover.jpg" alt="AET Cover">
+      <h3 class="aboutTitle">What is Arts and Entertainment Technology (AET)?</h3>
+
+    <p class= "aboutParagraph">Arts and Entertainment Technologies (AET) is the first Bachelor
+      of Science degree offered by the College of Fine Arts in the School
+      of Design and Creative Technologies at The University of Texas at
+      Austin. In this interdisciplinary major, creative expression
+      merges with technological innovation. AET foundational
+      courses deliver creative coding fundamentals, an introduction
+      to a wide range of creative production software and a colloquium
+      series of guest speakers. Students advance to projects-based
+      coursework drawn from four emphasis areas: Game Design;
+      Digital Visualization; Performance, Lighting and Interactivity
+      (PLAI); and Music and Sound.</p>
+
+  <!-- <div class="specialtyContainer">
+    <p class="tt">Game Design</p><img class="specialtyItems" src="resources/game-circle.jpg" alt="Game Design">
+    <img class="specialtyItems" src="resources/diz-circle.png" alt="Digital Visualization">
+    <img class="specialtyItems" src="resources/music-circle.jpg" alt="Music and Sound">
+    <img class="specialtyItems" src="resources/plai-circle.jpg" alt="PLAI">
+  </div> -->
+
+      <div class="row">
+        <div class="column">
+          <img src="resources/game-circle.jpg" alt="Snow" style="width:80%;; border-radius: 15px;">
+        </div>
+        <div class="column">
+          <img src="resources/diz-circle.png" alt="Forest" style="width:80%; border-radius: 15px;">
+        </div>
+        <div class="column">
+          <img src="resources/music-circle.jpg" alt="Mountains" style="width:80%; border-radius: 15px;">
+        </div>
+        <div class="column">
+          <img src="resources/plai-circle.jpg" alt="Mountains" style="width:80%; border-radius: 15px;">
+        </div>
+      </div>
+
+      </div>
+
+      <footer class="footer">
+        Footer
+      </footer>
+
+</body>
 </html>
