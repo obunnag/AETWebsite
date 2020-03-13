@@ -1,46 +1,43 @@
 <!DOCTYPE html>
 <html>
-    
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>AET Course Guide</title>
     <link rel="stylesheet" type="text/css" href="stylesheet.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-<!--    <script src="https://kit.fontawesome.com/a076d05399.js"></script>-->
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300&display=swap" rel="stylesheet">
 
-    <style>
-        .fal fa-pen {
-          color: red;
-        }
-    </style>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://fontawesome.com"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="skrollr/src/skrollr.js"></script>
+
 </head>
-
+    
 <body>
-    <div class="content">
-        
-    <!--Navigation Bar-->
+    
+    <!--NAVIGATION BAR-->
+    <div class="container">
+      <header>
+
+    <a href="#" class="button"><i class="fas fa-pen"></i>Add Review</a>
     <ul class="nav-container">
-        <h3 class="mainTitle">
-            <a href="index.html">AET Course Guide</a>
-        </h3>
-<!--            <img class="longhornLogo" src="resources/longhorn-logo2.png" alt="Longhorn Logo">-->
-        <li><a class="navnav" href="index.html">Home</a></li>
-        <li class="dropdown">
-            <a href="javascript:void(0)" class="dropbtn">AET Courses</a>
-            <div class="dropdown-content">
-                <a href="fndtnsdigvis.html">Digital Visualization</a>
-                <a href="#">Music and Sound</a>
-                <a href="creativecoding.html">Game Design</a>
-                <a href="#">PLAI</a>
-            </div>
-        </li>
-        <li><a href="#">Instructors</a></li>
-        <li><a href="#">About Us</a></li>
-        <li><a href="#">Contact Us</a></li>
-        <li>
-            <!-- <i class="fas fa-star"></i> Star Code -->
-            <a class="pen" href="#"><i class="fas fa-pen"></i> Add Review</a>
-        </li>
+
+      <li><a class="navnav" href="parallax.html">Home</a></li>
+      <li class="dropdown">
+      <a href="javascript:void(0)" class="dropbtn">AET Courses<i class="fas fa-chevron-down"></i></a>
+      <div class="dropdown-content">
+        <a href="fndtnsdigvis.html">Digital Visualization</a>
+        <a href="#">Music and Sound</a>
+        <a href="creativecoding.html">Game Design</a>
+        <a href="#">PLAI</a>
+      </div>
+      </li>
+      <li><a href="#Instructors">Instructors</a></li>
+      <li><a href="#">Contact Us</a></li>
     </ul>
+    <a href="parallax.html" class="mainTitle">AET Course Guide</a>
+    </header>
         
     <!--Class Description-->
     <div class="classDescription">
@@ -49,9 +46,22 @@
         <div class=classContent>
             <img id="classImage" src="class_images/fndtnsdigvis.jpg" alt="Dig Vis">
             <p id="aboutClass">By utilizing contemporary computer graphic software, digital capture and imaging devices, and a digital vocabulary of the artistic use of technology within our culture, this course’s objective is to enable the student to make educated technological and conceptual decisions on how to explore and utilize the computer and digital technology within their own creative and technical career all focused by conceptual aesthetic development.</p>
+            
             <p id="syllabus">Current and Past Syllabi</p>
-            <a href="syllabus/fndtnsdigvis_sp2020.pdf" download>
+            <a id="syllabus" href="syllabus/general/fndtnsdigvis_sp2020_neal.pdf" download>
                 <button class="syllabiButton">Neal SP 2020</button>
+            </a>
+            <a id="syllabus" href="syllabus/general/fndtnsdigvis_fa19_hervey.pdf" download>
+                <button class="syllabiButton">Hervey FA 2019</button>
+            </a>
+            <a id="syllabus" href="syllabus/general/fndtnsdigvis_sp19_hervey.pdf" download>
+                <button class="syllabiButton">Hervey SP 2019</button>
+            </a>
+            <a id="syllabus" href="syllabus/general/fndtnsdigvis_fa18_hervey.pdf" download>
+                <button class="syllabiButton">Hervey FA 2018</button>
+            </a>
+            <a id="syllabus" href="syllabus/general/fndtnsdigvis_fa18_neal.pdf" download>
+                <button class="syllabiButton">Neal FA 2018</button>
             </a>
                 
         </div>
@@ -63,10 +73,12 @@
         <h2 id="titleProject">Past Student Projects</h2>
         
         <!--Project 1-->
-        <a href="projects/general/digvis/SarahElzein-instructionsedited.png" download>
-            <img class="project" src="projects/general/digvis/SarahElzein-instructionsedited.png" alt="project1">
-<!--            <button class="project"></button>-->
-        </a>
+        <div class="studentproj">
+            <a href="projects/general/digvis/SarahElzein-instructionsedited.png" download>
+                <img src="projects/general/digvis/SarahElzein-instructionsedited.png" alt="project1">
+            </a>
+            <figcaption>Sarah Elzein</figcaption>
+        </div>
     </div>
 
     <!--Student Reviews--> 
@@ -218,9 +230,9 @@
     
     
     <!--Footer-->
-      <footer class="footer">
-        Footer
-      </footer>
+    <footer class="footer">
+      © 2020 Arts and Entertainments Technology Course Guide
+    </footer>
 
 </body>
 </html>

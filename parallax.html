@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>AET Course Guide</title>
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://fontawesome.com"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="skrollr/src/skrollr.js"></script>
+
+</head>
+    
+<body>
+
+    <div class="container">
+      <header>
+
+    <a href="#" class="button"><i class="fas fa-pen"></i>Add Review</a>
+    <ul class="nav-container">
+
+      <li><a class="navnav" href="#Home">Home</a></li>
+      <li class="dropdown">
+      <a href="javascript:void(0)" class="dropbtn">AET Courses<i class="fas fa-chevron-down"></i></a>
+      <div class="dropdown-content">
+        <a href="fndtnsdigvis.html">Digital Visualization</a>
+        <a href="#">Music and Sound</a>
+        <a href="creativecoding.html">Game Design</a>
+        <a href="#">PLAI</a>
+      </div>
+      </li>
+      <li><a href="#Instructors">Instructors</a></li>
+      <li><a href="#">Contact Us</a></li>
+    </ul>
+    <a href="#" class="mainTitle">AET Course Guide</a>
+    </header>
+
+    <div class="parallax"></div>
+
+      <h2 class="specialtyTitles">Digital Visualization</h2>
+      <p class="text"><br><br>Digital Visualization courses provide a pathway for students
+         pursuing careers as visual content providers and artists for a wide range
+          of activities including: motion graphics and digital video editing,
+          3D modeling, character animation, concept art and many other areas of
+          commercial and conceptual art pursuits. Through foundational courses
+          in imaging and visualization, digital drawing and 3D modeling, students
+          are introduced to industry standard software like Adobe Creative Cloud,
+          Autodesk Maya and Unity. Students are encouraged to collaborate with
+          all the other AET emphases and with other creative disciplines across
+          the College of Fine Arts and beyond. The "blended” classroom model
+          (a combination of tutorials and creative projects) helps students
+          learn conceptual problem solving with industry standard software and
+          techniques. The program produces well-rounded students versed in
+          multiple graphic arts software and methodologies.</p>
+    <div class="parallax2"></div>
+    </div>
+    
+    <footer class="footer">
+      © 2020 Arts and Entertainments Technology Course Guide
+    </footer>
+
+
+    <!--JAVASCRIPT-->
+    <script>
+      ( function( $ ) {
+          // Init Skrollr
+          var s = skrollr.init({
+              render: function(data) {
+                  //Debugging - Log the current scroll position.
+                  //console.log(data.curTop);
+              }
+          });
+      } )( jQuery );
+
+
+    </script>
+
+
+
+</body>
+</html>

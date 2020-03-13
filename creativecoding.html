@@ -1,46 +1,42 @@
 <!DOCTYPE html>
 <html>
-    
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>AET Course Guide</title>
     <link rel="stylesheet" type="text/css" href="stylesheet.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-<!--    <script src="https://kit.fontawesome.com/a076d05399.js"></script>-->
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300&display=swap" rel="stylesheet">
 
-    <style>
-        .fal fa-pen {
-          color: red;
-        }
-    </style>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://fontawesome.com"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="skrollr/src/skrollr.js"></script>
+
 </head>
-
+    
 <body>
-    <div class="content">
-        
-    <!--Navigation Bar-->
+
+    <div class="container">
+      <header>
+
+    <a href="#" class="button"><i class="fas fa-pen"></i>Add Review</a>
     <ul class="nav-container">
-        <h3 class="mainTitle">
-            <a href="index.html">AET Course Guide</a>
-        </h3>
-<!--            <img class="longhornLogo" src="resources/longhorn-logo2.png" alt="Longhorn Logo">-->
-        <li><a class="navnav" href="index.html">Home</a></li>
-        <li class="dropdown">
-            <a href="javascript:void(0)" class="dropbtn">AET Courses</a>
-            <div class="dropdown-content">
-                <a href="fndtnsdigvis.html">Digital Visualization</a>
-                <a href="#">Music and Sound</a>
-                <a href="creativecoding.html">Game Design</a>
-                <a href="#">PLAI</a>
-            </div>
-        </li>
-        <li><a href="#">Instructors</a></li>
-        <li><a href="#">About Us</a></li>
-        <li><a href="#">Contact Us</a></li>
-        <li>
-            <!-- <i class="fas fa-star"></i> Star Code -->
-            <a class="pen" href="#"><i class="fas fa-pen"></i> Add Review</a>
-        </li>
+
+      <li><a class="navnav" href="parallax.html">Home</a></li>
+      <li class="dropdown">
+      <a href="javascript:void(0)" class="dropbtn">AET Courses<i class="fas fa-chevron-down"></i></a>
+      <div class="dropdown-content">
+        <a href="fndtnsdigvis.html">Digital Visualization</a>
+        <a href="#">Music and Sound</a>
+        <a href="creativecoding.html">Game Design</a>
+        <a href="#">PLAI</a>
+      </div>
+      </li>
+      <li><a href="#Instructors">Instructors</a></li>
+      <li><a href="#">Contact Us</a></li>
     </ul>
+    <a href="parallax.html" class="mainTitle">AET Course Guide</a>
+    </header>
         
     <!--Class Description-->
     <div class="classDescription">
@@ -50,8 +46,23 @@
             <img id="classImage" src="class_images/creativecoding.png" alt="Creative Coding">
             <p id="aboutClass">A guide for expressing original ideas directly in computer code using the graphics language Processing. Examines the making of computer tools for implementing artistic visions. Explores the computer’s role as an artist’s medium in the context of major ideas in contemporary art.</p>
             <p id="syllabus">Current and Past Syllabi</p>
-            <a href="syllabus/creativecoding_sp2020.pdf" download>
+            <a id="syllabus" href="syllabus/general/creativecoding_sp2020_coleman.pdf" download>
                 <button class="syllabiButton">Coleman SP 2020</button>
+            </a>
+            <a id="syllabus" href="syllabus/general/creativecoding_fa19_coleman.pdf" download>
+                <button class="syllabiButton">Coleman FA 2019</button>
+            </a>
+            <a id="syllabus" href="syllabus/general/creativecoding_sp19_coleman.pdf" download>
+                <button class="syllabiButton">Coleman SP 2019</button>
+            </a>
+            <a id="syllabus" href="syllabus/general/creativecoding_sp19_mckellar.pdf" download>
+                <button class="syllabiButton">McKellar SP 2019</button>
+            </a>
+            <a id="syllabus" href="syllabus/general/creativecoding_fa18_mj.pdf" download>
+                <button class="syllabiButton">MJ FA 2018</button>
+            </a>
+            <a id="syllabus" href="syllabus/general/creativecoding_fa18_mckellar.pdf" download>
+                <button class="syllabiButton">McKellar FA 2018</button>
             </a>
         </div>
     </div>
@@ -62,10 +73,12 @@
         <h2 id="titleProject">Past Student Projects</h2>
         
         <!--Project 1-->
-        <a href="projects/general/creativecoding/bonniebolton_cc.mov" download>
-            <img class="project" src="projects/general/creativecoding/bonniebolton_cc_img.png" alt="project1">
-<!--            <button class="project"></button>-->
-        </a>
+        <div class="studentproj">
+            <a href="projects/general/creativecoding/bonniebolton_cc.mov" download>
+                <img class="project" src="projects/general/creativecoding/bonniebolton_cc_img.png" alt="project1">
+            </a>
+            <figcaption>Bonnie Bolton</figcaption>
+        </div>
     </div>
 
     <!--Student Reviews--> 
@@ -78,42 +91,42 @@
 <!--            <p id="studentname">B.B.</p>-->
             <p id="ratings_col1">
                 <span class="bold">AET Specialty: 
-                    <span class="answer">#</span>
+                    <span class="answer">Digital Visualization</span>
                 </span><br>
                 <span class="bold">Current School Year: 
-                    <span class="answer">#</span>
+                    <span class="answer">Senior</span>
                 </span><br>
                 <span class="bold">Teacher: 
-                    <span class="answer">#</span>
+                    <span class="answer">MJ Johns</span>
                 </span><br>
                 <span class="bold">Semester taken: 
-                    <span class="answer">#</span>
+                    <span class="answer">Fall 2018</span>
                 </span><br>
                 <span class="bold">Recommend to a friend: 
-                    <span class="answer">#</span>
+                    <span class="answer">No</span>
                 </span><br>
                 <span class="bold">Level of Intensity: 
-                    <span class="answer">#</span>
+                    <span class="answer">5 out of 5</span>
                 </span>
             </p>
             <p id="ratings_col2">
                 <span class="bold">Projects are done: 
-                    <span class="answer">#</span>
+                    <span class="answer">Individually</span>
                 </span><br>
                 <span class="bold">Quizzes and/or exams:  
-                    <span class="answer">#</span>
+                    <span class="answer">No</span>
                 </span><br>
                 <span class="freq">How often? 
-                    <span class="answer">#</span>
+                    <span class="answer">N/A</span>
                 </span><br>
                 <span class="bold">Attendance mandatory: 
-                    <span class="answer">#</span>
+                    <span class="answer">Yes</span>
                 </span><br>
                 <span class="bold">Readings required: 
-                    <span class="answer">#</span>
+                    <span class="answer">Yes</span>
                 </span><br>
                 <span class="bold">Personal computer needed: 
-                    <span class="answer">#</span>
+                    <span class="answer">Yes</span>
                 </span><br>
             </p>
         </div>
@@ -127,9 +140,9 @@
     
     
     <!--Footer-->
-      <footer class="footer">
-        Footer
-      </footer>
+    <footer class="footer">
+      © 2020 Arts and Entertainments Technology Course Guide
+    </footer>
 
 </body>
 </html>
