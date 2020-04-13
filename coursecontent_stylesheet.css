@@ -11,21 +11,22 @@
   margin: 0;
 }
 
-i.fas.fa-chevron-down::before{
+i.fas.fa-chevron-down::before {
   padding-left: 5px;
   font-size: 13px;
 }
 
-i.fas.fa-pen::before{
+i.fas.fa-pen::before {
   padding-right: 5px;
 }
 
 .mainTitle {
   /* font-family: 'PT Serif'; */
+  font-family: 'Pasajero';
   /* margin-right: 200px; */
   padding: 8px 25px;
-  font-size: 20px;
-  font-family: 'Libre Baskerville', sans-serif;
+  font-size: 25px;
+  font-family: 'Source Sans Pro', sans-serif;
   text-decoration: none;
   color: black;
 }
@@ -33,6 +34,15 @@ i.fas.fa-pen::before{
 .nav-container {
   display: flex;
   flex-wrap: nowrap;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: none;
+  white-space: nowrap;
+  font-size: 18px;
+  float: right;
+  font-family: 'Source Sans Pro', sans-serif;
 }
 
 .button {
@@ -44,32 +54,13 @@ i.fas.fa-pen::before{
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 14px;
+  font-size: 18px;
   /* margin: 4px 2px; */
   cursor: pointer;
   float: right;
   margin-left: 25px;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
 }
-
-
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: none;
-  white-space: nowrap;
-  font-size: 14px;
-  float: right;
-  font-family: 'Raleway', sans-serif;
-}
-
-
-
-/* li:last-child {
-  border-right: none;
-} */
 
 li a, .dropbtn {
   display: inline-block;
@@ -77,11 +68,12 @@ li a, .dropbtn {
   text-align: center;
   padding: 8px 25px;
   text-decoration: none;
-  font-size: 16px;
+  font-size: 18px;
 }
 
 li a:hover, .dropdown:hover .dropbtn {
-color: #BF5700;}
+  color: #BF5700;
+}
 
 li.dropdown {
   display: inline-block;
@@ -92,7 +84,7 @@ li.dropdown {
   position: absolute;
   background-color: white;
   /* min-width: 196px; */
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.1);
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.1);
   z-index: 1;
 }
 
@@ -112,53 +104,37 @@ li.dropdown {
   display: block;
 }
 
-h2.specialtyTitles {
-  font-size: 1.5em;
-  float: left;
-  font-family: 'Raleway', sans-serif;
-  padding: 25px;
-  text-align: center;
+.parallax {
+  background: url('resources/cover.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  height: 450px;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  /* margin-left: 50%; */
+  /* transform: translateX(-50%); */
+}
 
+.headerPragraph {
+  margin: 0px 100px 70px 100px;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: left;
+}
+
+.specialtyTitles {
+  font-size: 1.5em;
+  font-family: 'Source Sans Pro', sans-serif;
+  padding: 25px 25px 15px 25px;
+  text-align: center;
 }
 
 .text {
   /* margin-top: 200px; */
-  font-family: 'Raleway', sans-serif;
-  font-size: 0.9em;
-  font-weight: 200;
-    line-height: 1.4em;
+  font-family: 'Source Sans Pro', sans-serif;
   padding: 25px;
-
 }
-
-
-
-
-.container {
-    /* max-width: 960px; */
-    margin: 0 auto;
-    background: white;
-    font-size: 24px;
-    /* padding: 25px; */
-  }
-
-  .parallax{
-    background: url('resources/cover.jpg');
-    background-size: cover;
-    background-attachment: fixed;
-    height: 500px;
-    padding: 0;
-    margin: 0;
-  }
-
-  .parallax2{
-    background: url('img1.jpg');
-    background-size: cover;
-    background-attachment: fixed;
-    height: 500px;
-    padding: 0;
-    margin: 0;
-  }
 
 header {
   margin: 25px;
@@ -177,7 +153,7 @@ header {
     padding-top: 30px;
     padding-bottom: 10px;
     font-family: 'Raleway', serif;
-    font-size: 1.3em;
+    font-size: 28px;
 }
 
 #instructorName {
@@ -239,7 +215,7 @@ a#syllabus {
 
 #titleProject {
     font-family: 'Raleway', serif;
-    font-size: 1.3em;
+    font-size: 28px;
     margin-left: 100px; 
     padding-top: 40px;
 }
@@ -281,7 +257,7 @@ a#syllabus {
 
 #titleReviews {
     font-family: 'Raleway', serif;
-    font-size: 1.3em;
+    font-size: 28px;
     margin-left: 100px; 
     padding-top: 40px;
 }
@@ -289,7 +265,7 @@ a#syllabus {
 .review {
     background-color: #ffffff;
     font-family: 'Raleway', serif;
-    font-size: 0.7em;
+    font-size: 15px;
     height: 350px;
     width: 1220px;
     border-radius: 15px;
@@ -339,32 +315,76 @@ a#syllabus {
 
 
 
-
-
 /******************FOOTER*****************/
+  
+/* Footer STARTS */
+.container {
+  margin: 0 auto;
+  background: white;
+  font-size: 24px;
+  min-height: 100%;
+}
 
-  /* Footer STARTS */
-  html, body {
-    height: 100%;
-    margin: 0;
-  }
+.footer {
+  height: 80px;
+  padding: 20px;
+  text-align: center;
+}
 
-  .content {
-    min-height: 100%;
-    margin: 0 auto -50px;
-  }
+.footerCopyText {
+  margin-top: 10px;
+}
 
-  .footer {
-    height: 100px;
-  }
+footer {
+  background: #202c43;
+  color: white;
+  padding: 0 20px;
+  text-align: center;
+  font-family: 'Source Sans Pro', sans-serif;
+}
 
-  footer {
-    background: #1b1b1b;
-    color: white;
-    line-height: 100px;
-    padding: 0 20px;
-    text-align: center;
-    font-family: 'Source Sans Pro', sans-serif;
-  }
+.footerLi {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 8px 25px;
+  text-decoration: underline;
+  font-size: 16px;
+}
 
-  /* Footer ENDS */
+.footer-container {
+  display: flex;
+  flex-wrap: nowrap;
+  color: white;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: none;
+  white-space: nowrap;
+  font-size: 16px;
+  text-align: center;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.test {
+  text-align: center;
+}
+
+.buttonF {
+  background-color: #BF5700;
+  border: none;
+  border-radius: 25px;
+  color: white;
+  padding: 6px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  /* margin: 4px 2px; */
+  cursor: pointer;
+  margin-top: 10px;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+/* Footer ENDS */

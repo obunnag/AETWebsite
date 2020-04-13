@@ -1,84 +1,160 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>AET Course Guide</title>
-    <link rel="stylesheet" type="text/css" href="stylesheet.css">
-    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AET Course Guide</title>
+  <link rel="stylesheet" type="text/css" href="parallax_stylesheet.css">
+  <link rel="stylesheet" type="text/css" href="mediaQuaries.css">
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300&display=swap" rel="stylesheet">
 
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-    <script src="https://fontawesome.com"></script>
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <script src="https://fontawesome.com"></script>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="skrollr/src/skrollr.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="skrollr/src/skrollr.js"></script>
 
 </head>
-    
+
 <body>
+  <div class="container">
+    <header>
+      <a href="#" class="button"><i class="fas fa-pen"></i>Add Review</a>
+      <ul class="nav-container">
 
-    <div class="container">
-      <header>
+        <li><a class="navnav" href="#Home">Home</a></li>
+          
+          <li class="dropdown">
+          <a href="javascript:void(0)" class="dropbtn">AET Courses<i class="fas fa-chevron-down"></i></a>
+          <div class="dropdown-content">
+            <a href="allcourses.html">All Courses</a>
+            <a href="digvis.html">Digital Visualization</a>
+            <a href="music.html">Music and Sound</a>
+            <a href="gamedesign.html">Game Design</a>
+            <a href="plai.html">PLAI</a>
+          </div>
+        </li>
+          
+        <li><a class="navnav" href="#Instructors">Instructors</a></li>
 
-    <a href="#" class="button"><i class="fas fa-pen"></i>Add Review</a>
-    <ul class="nav-container">
+        <li><a href="#">Contact Us</a></li>
+      </ul>
 
-      <li><a class="navnav" href="#Home">Home</a></li>
-      <li class="dropdown">
-      <a href="javascript:void(0)" class="dropbtn">AET Courses<i class="fas fa-chevron-down"></i></a>
-      <div class="dropdown-content">
-        <a href="fndtnsdigvis.html">Digital Visualization</a>
-        <a href="#">Music and Sound</a>
-        <a href="creativecoding.html">Game Design</a>
-        <a href="#">PLAI</a>
-      </div>
-      </li>
-      <li><a href="#Instructors">Instructors</a></li>
-      <li><a href="#">Contact Us</a></li>
-    </ul>
-    <a href="#" class="mainTitle">AET Course Guide</a>
+      <a href="#" class="mainTitle">AET GUIDE</a>
     </header>
 
-    <div class="parallax"></div>
-
-      <h2 class="specialtyTitles">Digital Visualization</h2>
-      <p class="text"><br><br>Digital Visualization courses provide a pathway for students
-         pursuing careers as visual content providers and artists for a wide range
-          of activities including: motion graphics and digital video editing,
-          3D modeling, character animation, concept art and many other areas of
-          commercial and conceptual art pursuits. Through foundational courses
-          in imaging and visualization, digital drawing and 3D modeling, students
-          are introduced to industry standard software like Adobe Creative Cloud,
-          Autodesk Maya and Unity. Students are encouraged to collaborate with
-          all the other AET emphases and with other creative disciplines across
-          the College of Fine Arts and beyond. The "blended” classroom model
-          (a combination of tutorials and creative projects) helps students
-          learn conceptual problem solving with industry standard software and
-          techniques. The program produces well-rounded students versed in
-          multiple graphic arts software and methodologies.</p>
-    <div class="parallax2"></div>
+    <div class="parallax">
     </div>
-    
-    <footer class="footer">
-      © 2020 Arts and Entertainments Technology Course Guide
-    </footer>
+
+    <h2 class="specialtyTitles">What is Arts and Entertainment Technology?</h2>
+    <p class="headerPragraph">Arts and Entertainment Technologies (AET) is the first
+      Bachelor of Science degree offered by the College of Fine Arts in the
+      School of Design and Creative Technologies at The University of Texas
+      at Austin. In this interdisciplinary major, creative expression
+      merges with technological innovation. AET foundational courses deliver
+      creative coding fundamentals, an introduction to a wide range of
+      creative production software and a colloquium series of guest
+      speakers. Students advance to projects-based coursework drawn
+      from four emphasis areas: Game Design; Digital Visualization;
+      Performance, Lighting and Interactivity (PLAI); and Music
+      and Sound. In addition to completing the university’s core
+      curriculum, students will also complete a secondary field of study
+      in a complementary area, such as Business Foundations, Elements
+      of Computing, Integrated Design or Studio Art. Graduates of AET
+      will be prepared to create digital content, lead production
+      teams and develop new applications of technology in the
+      evolving entertainment industry.</p>
+
+    <!-- Middle Bar hide and seek menu -->
+    <div class="middleBar">
+      <button class="btn active line" onclick="diz()">Digital Visualization</button>
+      <button class="btn line" onclick="game()">Game Design</button>
+      <button class="btn line" onclick="plai()">Projection, Lighting and Interactivity</button>
+      <button class="btn line" onclick="music()">Music and Sound</button>
+    </div>
 
 
-    <!--JAVASCRIPT-->
-    <script>
-      ( function( $ ) {
-          // Init Skrollr
-          var s = skrollr.init({
-              render: function(data) {
-                  //Debugging - Log the current scroll position.
-                  //console.log(data.curTop);
-              }
-          });
-      } )( jQuery );
+    <p id="demo">
+      Digital Visualization courses provide a pathway for students pursuing
+      careers as visual content providers for a wide range of activities
+      including game design, 3-D projection, character animation, world
+      building, AR/VR and many areas of commercial art pursuits such as
+      motion graphics and digital video editing. Through foundational courses
+      in imaging and visualization, digital drawing and 3-D modeling,
+      students are introduced to industry-standard software like Adobe
+      Creative Cloud, Autodesk Maya and Unity. Students are encouraged to
+      collaborate with all the other AET emphases and with other creative
+      disciplines across the College of Fine Arts and beyond.
+    </p>
 
 
-    </script>
+
+  </div>
+
+  <footer class="footer">
+    <p class="footerCopyText">© 2020 Arts and Entertainment Technology Guide</p>
+    <div class="test" <ul class="footer-container">
+      <a class="footerLi" href="#">Home</a>
+      <a class="footerLi" href="#">About Us</a>
+      <a class="footerLi" href="#">Contact Us</a>
+      <a href="#" class="buttonF"><i class="fas fa-pen"></i>Add Review</a></li>
+      </ul>
+    </div>
+  </footer>
+
+
+
+  <script>
+    (function($) {
+      // Init Skrollr
+      var s = skrollr.init({
+        render: function(data) {
+          //Debugging - Log the current scroll position.
+          //console.log(data.curTop);
+        }
+      });
+    })(jQuery);
+  </script>
+
+  <!-- JAVASCRIPT for hide/show bar -->
+  <script>
+    function diz() {
+      document.getElementById("demo").innerHTML =
+        "Digital Visualization courses provide a pathway for students pursuing careers as visual content providers for a wide range of activities including game design, 3-D projection, character animation, world building, AR/VR and many areas of commercial art pursuits such as motion graphics and digital video editing. Through foundational courses in imaging and visualization, digital drawing and 3-D modeling, students are introduced to industry-standard software like Adobe Creative Cloud, Autodesk Maya and Unity. Students are encouraged to collaborate with all the other AET emphases and with other creative disciplines across the College of Fine Arts and beyond.";
+    }
+  </script>
+
+  <script>
+    var activeFirst = 1;
+  </script>
+
+  <script>
+    function game() {
+      document.getElementById("demo").innerHTML =
+        "The Game Design and Development program offered through the Arts and Entertainment Technologies degree extends the core mission of the University and prepares students for entry level opportunities in the game industry and related fields by combining design driven hands-on experience with industry standard methods and practices. Students create complete, presentation-ready work at all levels of study in design, art, tech, and production.";
+    }
+  </script>
+
+  <script>
+    function plai() {
+      document.getElementById("demo").innerHTML =
+        "Projection, Lighting, and Interactivity converges lighting, projection, digital media, gaming technology and interactive systems to enable new performances and allow students to develop and design digital live experiences. PLAI equips students to utilize digital imagery, lighting, projection and creative coding to create engaging immersive and interactive live environments. Common applications are found across a broad spectrum that includes themed entertainment, promotional events, e-sports, EDM, music concerts and architecture of public spaces. Students will learn methods for entertaining and communicating with audiences through established and emerging techniques such as 3-D projection mapping, motion tracking, generative imagery and interactive entertainment control systems. Students will also work collaboratively to produce dynamic visual displays for live events such as music concerts and sports events to provide them with experiential learning that prepares them for a successful career after graduating.";
+    }
+  </script>
+
+  <script>
+    function music() {
+      document.getElementById("demo").innerHTML =
+        "The Music and Sound emphasis explores the hardware, software and creative practices of contemporary music and sound design. Courses in audio processing, synthesis and sampling prepare students to utilize current music and audio systems to create their own tracks and sound for games, screen, branding and interactive performance and live events. Additional courses are also offered in popular music styles, commercial music and music programming. Students are encouraged to collaborate with the other AET emphases and with other creative disciplines across the College of Fine Arts and beyond.";
+    }
+  </script>
+
+
+
+
 
 
 
 </body>
+
 </html>
