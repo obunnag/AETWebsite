@@ -140,11 +140,11 @@ header {
   margin: 25px;
 }
 
-/**************COURSE REVIEW PAGE**************/
+/**************PAGE**************/
 
 .grid {
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: 3fr 3fr 3fr;
 }
 
 .allCourses {
@@ -178,8 +178,8 @@ header {
 
 .eachCourse {
     background-color: #D8D2D2;
-    margin: 20px 50px 90px 100px;
-    max-width: 500px;
+    margin: 20px 10px 90px 60px;
+    max-width: 375px;
     height: 450px;
     border-radius: 20px;
     font-family: "Raleway";
@@ -189,8 +189,8 @@ header {
 }
 
 .eachCourse img {
-    width: 500px;
-    max-height: 200px;
+    width: 375px;
+    max-height: 180px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
 /*
@@ -201,21 +201,21 @@ header {
 }
 
 .eachCourse h2 {
-    font-size: 23px;
+    font-size: 18px;
     margin: 0 15px;
     padding-top: 10px;
 /*    font-family: "Libre Baskerville"*/
 }
 
 .eachCourse h3 {
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 400;
     margin: 0 15px;
     padding-top: 2px;
 }
 
 .eachCourse p {
-    font-size: 14px;
+    font-size: 13px;
     font-weight: 300;
     margin: 0 15px;
     padding-top: 10px;

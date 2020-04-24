@@ -140,179 +140,125 @@ header {
   margin: 25px;
 }
 
-/**************COURSE REVIEW PAGE**************/
+/**************INSTRUCTOR INFO PAGE**************/
 
-/* Class Description */ 
-.classDescription {
-    background-color: #D8D2D2;
+.grid {
+    display: grid;
+    grid-template-columns: auto auto;
 }
 
-#courseName {
-    margin: 0 auto;
-    margin-left: 100px;
-    padding-top: 30px;
-    padding-bottom: 10px;
-    font-family: 'Raleway', serif;
-    font-size: 28px;
-}
-
-#instructorName {
-    font-family: 'Raleway', serif;
-    font-weight: 300;
-    font-size: 20px;
-    margin-left: 100px;
-}
-
-.classContent {
-    display: inline-block;
-    vertical-align: middle;
-}
-
-#classImage {
-    width: 400px;
-    max-height: 300px;
-    margin: 30px 50px 50px 100px;
-    float: left;
-    border-radius: 10px;
-}
-
-#aboutClass {
-    font-family: 'Raleway', serif;
-    font-size: 15px;
-    line-height: 1.5em;
-    margin-top: 30px;
-    margin-right: 150px;
-    margin-bottom: 100px;
-}
-
-#syllabus {
-    font-family: 'Raleway', serif;
-    font-size: 15px;
-    font-weight: 600;
-    line-height: 1.5em;
-}
-
-.syllabiButton {
-    background-color: #E06E1B;
-    font-family: 'Raleway', serif;
-    font-size: 15px;
-    color: #fff;
-    border: none;
-    border-radius: 15px;
-    padding: 5px 15px;
-    margin-top: 10px;
-    margin-right: 10px;
-    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.5);
-}
-
-a#syllabus {
-    text-decoration: none;
-}
-
-/* Past Projects */
-.pastProjects {
-    background-color: #F0F0ED;
-}
-
-#titleProject {
-    font-family: 'Raleway', serif;
-    font-size: 28px;
-    margin-left: 100px; 
-    padding-top: 40px;
-}
-
-.studentproj {
-    text-align: justify;
-    width: 300px;
-}
-
-.studentproj img {
-    width: 300px;
-    height: 200px;
-    border: none;
-    border-radius: 20px;
-    margin: 0 auto;
-    margin: 30px 100px 10px 100px;
-    box-shadow: 1px 2px 2px 0px rgba(0, 0, 0, 0.1);
-    display: block;
-}
-
-.studentproj figcaption {
-    font-family: 'Raleway';
-    font-size: 15px;
-    width: 300px;
-    text-align: center;
-    margin-left: 100px;
-    padding-top: 5px;
+.instructor {
+    background-color: #202c43;
+/*    background-image: url(class_images/allcourse_bg.png);*/
+    max-width: 100%;
+    height: 100%;
     padding-bottom: 50px;
 }
 
-
-
-/* Student Reviews */
-
-.studentReviews {
-    background-color: #D8D2D2;
-    padding-bottom: 70px;
+.instructor h1 {
+    font-family: "Raleway";
+    font-size: 30px;
+    text-align: center;
+    padding-top: 50px;
+    margin: 0 500px 18px 500px;
+    color: white;
 }
 
-#titleReviews {
-    font-family: 'Raleway', serif;
-    font-size: 28px;
-    margin-left: 100px; 
-    padding-top: 40px;
+.instructor h2 {
+    font-weight: 200;
+    font-family: "Raleway";
+    font-size: 25px;
+    text-align: center;
+    margin: 0px 500px 120px;
+    color: white;
 }
 
-.review {
+img {
+    margin: -150px 560px 30px 550px;
+    border: 3px solid white;
+    border-radius: 50%;
+}
+
+.about {
     background-color: #ffffff;
-    font-family: 'Raleway', serif;
-    font-size: 15px;
-    height: 350px;
-    width: 1220px;
-    border-radius: 15px;
-    margin: 60px 110px 0 110px;
-    display: inline-block;
+    height: 100%;
+}
+
+.about h2 {
+    text-align: center;
+    color: #E06E1B;
+    font-family: "Raleway";
+    margin: 0 100px 0 100px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #E06E1B; 
+}
+
+.about p {
+    font-family: "Raleway";
+    font-weight: 600;
+    margin: 25px 100px 50px 100px;
+    line-height: 25px;
+}
+
+.column1 {
+    margin-bottom: 50px;
+}
+
+.column1 h2 {
+    color: #E06E1B;
+    font-family: "Raleway";
+    margin: 0 200px 0 100px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #E06E1B; 
+}
+
+.column1 p {
+    font-family: "Raleway";
+    font-weight: 600;
+    margin: 15px 100px 0px 100px;
+}
+
+.column2 h2 {
+    color: #E06E1B;
+    font-family: "Raleway";
+    margin: 0 70px 0 0;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #E06E1B; 
+}
+
+i.fas.fa-envelope::before {
+    padding-right: 10px;
+    color: #E06E1B;
+}
+
+i.far.fa-building::before {
+    padding-right: 10px;
+    color: #E06E1B;
+}
+
+i.fas.fa-globe::before {
+    padding-right: 10px;
+    color: #E06E1B;
 }
 
 
-#avatar {
-    max-width: 200px;
-    margin: 70px 50px 50px 60px;
-    display: inline-block;
-    float: left;
+#row p {
+    font-family: "Raleway";
+    font-weight: 600;
+    margin: 15px 70px 0 0;
 }
 
-#ratings_col1 {
-/*    margin: 30px 10px;*/
-    margin-top: 70px;
-    margin-left: 90px;
-    line-height: 2.3em;
-    display: inline-block;
+
+#row a {
+    font-family: "Raleway";
+    font-weight: 600;
+    font-size: 16px;
+    margin: 15px 70px 0 -25px;
 }
 
-#ratings_col2 {
-    margin-left: 200px;
-    line-height: 2.3em;
-    display: inline-block;
+#row a:hover {
+    color: deepskyblue;
 }
-
-.bold {
-    font-weight: 700;
-}
-
-.freq {
-    font-weight: 500;
-    margin-left: 40px;
-}
-
-.answer {
-    font-weight: 400;
-}
-
-#studentname {
-    float: left;
-}
-
 
 
 
