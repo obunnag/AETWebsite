@@ -79,12 +79,40 @@
         <h2 id="titleProject">Past Student Projects</h2>
         
         <!--Project 1-->
-        <div class="studentproj">
-            <a href="projects/general/creativecoding/bonniebolton_cc.mov" download>
-                <img class="project" src="projects/general/creativecoding/bonniebolton_cc_img.png" alt="project1">
-            </a>
-            <figcaption>Bonnie Bolton</figcaption>
+        <div class="box">
+            <img src="projects/blue.png" alt="fall2019">
+            <div class="centered">Fall 2019</div>
         </div>
+        
+        <!--Project 2-->
+        <div class="box">
+            <img src="projects/blue.png" alt="fall2019">
+            <div class="centered">Spring 2019</div>
+        </div>
+        
+        
+        <!--Project 3-->
+        <a class="navnav" href="spring2019.html">
+            <div class="box">
+                <img src="projects/blue.png" alt="fall2019">
+                <div class="centered">Fall 2018</div>
+            </div>
+        </a>
+        
+        <!--Upload-->
+        <form action="/action_page.php">
+            <input type="file" id="myFile" hidden="hidden">
+            <button type="button" id="upload"><i class="fas fa-upload"></i>Upload Project</button>
+            
+            <script type="text/javascript">
+                const myFileBtn = document.getElementById("myFile");
+                const customBtn = document.getElementById("upload");
+                
+                customBtn.addEventListener("click", function() {
+                    myFileBtn.click();
+                })
+            </script>
+        </form>
     </div>
 
     <!--Student Reviews--> 
@@ -112,7 +140,9 @@
                     <span class="answer">No</span>
                 </span><br>
                 <span class="bold">Level of Intensity: 
-                    <span class="answer">5 out of 5</span>
+                    <span class="answer">
+                        <img src="projects/stars.png" alt="stars">
+                    </span>
                 </span>
             </p>
             <p id="ratings_col2">

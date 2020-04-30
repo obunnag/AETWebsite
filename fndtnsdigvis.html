@@ -78,12 +78,39 @@
         <h2 id="titleProject">Past Student Projects</h2>
         
         <!--Project 1-->
-        <div class="studentproj">
-            <a href="projects/general/digvis/SarahElzein-instructionsedited.png" download>
-                <img src="projects/general/digvis/SarahElzein-instructionsedited.png" alt="project1">
-            </a>
-            <figcaption>Sarah Elzein</figcaption>
+        <div class="box">
+            <img src="projects/blue.png" alt="fall2019">
+            <div class="centered">Fall 2019</div>
         </div>
+        
+        <!--Project 2-->
+        <a class="navnav" href="spring2019.html">
+            <div class="box">
+                <img src="projects/blue.png" alt="fall2019">
+                <div class="centered">Spring 2019</div>
+            </div>
+        </a>
+        
+        <!--Project 3-->
+        <div class="box">
+            <img src="projects/blue.png" alt="fall2019">
+            <div class="centered">Fall 2018</div>
+        </div>
+        
+        <!--Upload-->
+        <form action="/action_page.php">
+            <input type="file" id="myFile" hidden="hidden">
+            <button type="button" id="upload"><i class="fas fa-upload"></i>Upload Project</button>
+            
+            <script type="text/javascript">
+                const myFileBtn = document.getElementById("myFile");
+                const customBtn = document.getElementById("upload");
+                
+                customBtn.addEventListener("click", function() {
+                    myFileBtn.click();
+                })
+            </script>
+        </form>
     </div>
 
     <!--Student Reviews--> 
@@ -108,10 +135,12 @@
                     <span class="answer">Fall 2017</span>
                 </span><br>
                 <span class="bold">Recommend to a friend: 
-                    <span class="answer">Yes</span>
+                    <span class="answer">N/A</span>
                 </span><br>
                 <span class="bold">Level of Intensity: 
-                    <span class="answer">1 out of 5</span>
+                    <span class="answer">
+                        <img src="projects/stars.png" alt="stars">
+                    </span>
                 </span>
             </p>
             <p id="ratings_col2">
@@ -154,10 +183,12 @@
                     <span class="answer">Fall 2017</span>
                 </span><br>
                 <span class="bold">Recommend to a friend: 
-                    <span class="answer">Yes</span>
+                    <span class="answer">N/A</span>
                 </span><br>
                 <span class="bold">Level of Intensity: 
-                    <span class="answer">2 out of 5</span>
+                    <span class="answer">
+                        <img src="projects/stars.png" alt="stars">
+                    </span>
                 </span>
             </p>
             <p id="ratings_col2">
@@ -200,10 +231,12 @@
                     <span class="answer">Fall 2018</span>
                 </span><br>
                 <span class="bold">Recommend to a friend: 
-                    <span class="answer">Yes</span>
+                    <span class="answer">N/A</span>
                 </span><br>
                 <span class="bold">Level of Intensity: 
-                    <span class="answer">3 out of 5</span>
+                    <span class="answer">
+                        <img src="projects/stars.png" alt="stars">
+                    </span>
                 </span>
             </p>
             <p id="ratings_col2">

@@ -147,40 +147,65 @@ header {
     grid-template-columns: 3fr 3fr 3fr;
 }
 
-.allCourses {
-/*    background-color: #d4cbc2;*/
-    background-image: url(class_images/allcourse_bg.png);
+.pastProjects {
+    background-color: #D8D2D2;
     max-width: 100%;
     height: 100%;
     padding-bottom: 100px;
     
 }
 
-.allCourses h1 {
+.pastProjects h1 {
     font-family: "Raleway";
-    font-size: 25px;
-    text-align: center;
-    padding: 50px 0;
+    font-size: 30px;
+    margin: 0px 60px;
+    padding: 50px 0 10px 0;
 }
 
-.image {
+.pastProjects h2 {
+    font-family: "Raleway";
+    font-size: 18px;
+    font-weight: 300;
+    margin: 0px 0px 40px 60px;
+}
+
+#upload {
+    background-color: #E06E1B;
+    font-family: 'Raleway', serif;
+    font-size: 16px;
+    color: #fff;
+    border: none;
+    border-radius: 15px;
+    padding: 9px 17px;
+    float: right;
+    display: inline-block;
+    margin: -90px 50px 50px 0;
+    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.5);
+}
+
+#upload:hover {
+    background-color: #a75a00;
+    opacity: 0.8;
+}
+
+i.fas.fa-upload::before {
+    padding-right: 7px;
+}
+
+.centered {
+    color: white;
+    font-size: 25px;
+    font-weight: 600;
     position: relative;
     text-align: center;
+    transform: translate(0, -180px);
 }
 
-.top-right {
-    position: absolute;
-    top: 8px;
-    right: 16px;
-    color: white;
-    font-weight: 600;
-}
-
-.eachCourse {
-    background-color: #D8D2D2;
+.eachProject {
+    background-color: #fff;
     margin: 20px 10px 90px 60px;
-    max-width: 375px;
-    height: 450px;
+    max-width: 350px;
+    height: 350px;
     border-radius: 20px;
     font-family: "Raleway";
     display: inline-block;
@@ -188,47 +213,20 @@ header {
     color: black;
 }
 
-.eachCourse:hover {
-    background-color: #a39a9a;
-    opacity: 0.9;
-}
-
-.eachCourse img {
-    width: 375px;
-    max-height: 180px;
+.eachProject img {
+    width: 350px;
+    max-height: 350px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
-/*
-    border-bottom-left-radius: 0px;
-    border-bottom-right-radius: 0px;
-*/
-    opacity: 80%;
 }
 
-.eachCourse h2 {
-    font-size: 18px;
-    margin: 0 15px;
-    padding-top: 10px;
-/*    font-family: "Libre Baskerville"*/
+.eachProject a {
+    text-decoration: none;
 }
 
-.eachCourse h3 {
-    font-size: 14px;
-    font-weight: 400;
-    margin: 0 15px;
-    padding-top: 2px;
+.eachProject a:hover {
+    opacity: 0.9;
 }
-
-.eachCourse p {
-    font-size: 13px;
-    font-weight: 300;
-    margin: 0 15px;
-    padding-top: 10px;
-    line-height: 18px;
-}
-
-
-
 
 /******************FOOTER*****************/
   

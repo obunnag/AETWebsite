@@ -205,6 +205,11 @@ header {
     box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.5);
 }
 
+.syllabiButton:hover {
+    background-color: #a75a00;
+    opacity: 0.8;
+}
+
 a#syllabus {
     text-decoration: none;
 }
@@ -221,32 +226,59 @@ a#syllabus {
     padding-top: 40px;
 }
 
-.studentproj {
-    text-align: justify;
+.box {
+/*    text-align: justify;*/
     width: 300px;
+    display: inline-block;
+    margin: 30px 155px 50px 0px;
 }
 
-.studentproj img {
+.box:hover {
+    opacity: 0.9;
+}
+
+.box img {
     width: 300px;
-    height: 200px;
+    height: 225px;
     border: none;
     border-radius: 20px;
     margin: 0 auto;
     margin: 30px 100px 10px 100px;
-    box-shadow: 1px 2px 2px 0px rgba(0, 0, 0, 0.1);
     display: block;
 }
 
-.studentproj figcaption {
+.centered {
     font-family: 'Raleway';
-    font-size: 15px;
-    width: 300px;
+    font-weight: 600;
+    font-size: 25px;
+    color: white;
+    position: relative;
     text-align: center;
-    margin-left: 100px;
-    padding-top: 5px;
-    padding-bottom: 50px;
+    transform: translate(105px, -135px);
 }
 
+#upload {
+    background-color: #E06E1B;
+    font-family: 'Raleway', serif;
+    font-size: 16px;
+    color: #fff;
+    border: none;
+    border-radius: 15px;
+    padding: 9px 17px;
+    float: right;
+    display: inline-block;
+    margin: -70px 50px 50px 0;
+    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.5);
+}
+
+#upload:hover {
+    background-color: #a75a00;
+    opacity: 0.8;
+}
+
+i.fas.fa-upload::before {
+    padding-right: 7px;
+}
 
 
 /* Student Reviews */
@@ -307,6 +339,11 @@ a#syllabus {
 
 .answer {
     font-weight: 400;
+}
+
+.answer img {
+    max-width: 100px;
+    margin-left: 7px;
 }
 
 #studentname {
