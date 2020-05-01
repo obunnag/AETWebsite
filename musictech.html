@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>AET Course Guide</title>
+    <link rel="stylesheet" type="text/css" href="coursecontent_stylesheet.css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://fontawesome.com"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="skrollr/src/skrollr.js"></script>
+
+</head>
+    
+<body>
+
+    <!--NAVIGATION BAR-->
+    <div class="container">
+    <header>
+      <a href="#" class="button"><i class="fas fa-pen"></i>Add Review</a>
+      <ul class="nav-container">
+
+        <li><a class="navnav" href="instructors.html">Home</a></li>
+          
+          <li class="dropdown">
+          <a href="javascript:void(0)" class="dropbtn">AET Courses<i class="fas fa-chevron-down"></i></a>
+          <div class="dropdown-content">
+            <a href="allcourses.html">All Courses</a>
+            <a href="digvis.html">Digital Visualization</a>
+            <a href="music.html">Music and Sound</a>
+            <a href="gamedesign.html">Game Design</a>
+            <a href="plai.html">PLAI</a>
+          </div>
+        </li>
+          
+        <li><a class="navnav" href="#Instructors">Instructors</a></li>
+
+        <li><a href="#">Contact Us</a></li>
+      </ul>
+
+      <a href="parallax.html" class="mainTitle">AET GUIDE</a>
+    </header>
+    </div>
+        
+    <!--Class Description-->
+    <div class="classDescription">
+        <h2 id="courseName">AET 305 Foundations of Music Technology</h2>
+        <h3 id="instructorName">TBD</h3>
+        <div class=classContent>
+            <img id="classImage" src="class_images/musictech.png" alt="Music Tech">
+            <p id="aboutClass">Students enrolled this class will focus on learning the basic concepts behind digital audio and recording. The course will cover foundational material for dealing with recording, editing, sequencing, and mixing inside a Digital Audio Workstation. The primary objective of this course is to provide a functional understanding of digital audio systems and recording techniques that can be utilized in various fields including, but not limited to: audio production, film scoring, game music, and sound design.</p>
+            <p id="syllabus">Current and Past Syllabi:</p>
+            <a id="syllabus" href="syllabus/general/music_sp20_taylor.pdf" download>
+                <button class="syllabiButton">Taylor SP 2020</button>
+            </a>
+            <a id="syllabus" href="syllabus/general/music_fa19_taylor.pdf" download>
+                <button class="syllabiButton">Taylor FA 2019</button>
+            </a>
+            <a id="syllabus" href="syllabus/general/music_sp19_nokes.pdf" download>
+                <button class="syllabiButton">Nokes SP 2019</button>
+            </a>
+            <a id="syllabus" href="syllabus/general/music_fa18_nokes.pdf" download>
+                <button class="syllabiButton">Nokes FA 2018</button>
+            </a>
+        </div>
+    </div>
+        
+    
+    <!--Past Projects-->
+    <div class="pastProjects">
+        <h2 id="titleProject">Past Student Projects</h2>
+        
+        <!--Project 1-->
+        <a class="navnav" href="fall2019.html">
+            <div class="box">
+                <img src="projects/blue.png" alt="fall2019">
+                <div class="centered">Fall 2019</div>
+            </div>
+        </a>
+        
+        <!--Project 2-->
+        <div class="box">
+            <img src="projects/blue.png" alt="fall2019">
+            <div class="centered">Spring 2019</div>
+        </div>
+        
+        
+        <!--Project 3-->
+        <div class="box">
+            <img src="projects/blue.png" alt="fall2019">
+            <div class="centered">Fall 2018</div>
+        </div>
+        
+        <!--Upload-->
+        <form action="/action_page.php">
+            <input type="file" id="myFile" hidden="hidden">
+            <button type="button" id="upload"><i class="fas fa-upload"></i>Upload Project</button>
+            
+            <script type="text/javascript">
+                const myFileBtn = document.getElementById("myFile");
+                const customBtn = document.getElementById("upload");
+                
+                customBtn.addEventListener("click", function() {
+                    myFileBtn.click();
+                })
+            </script>
+        </form>
+    </div>
+
+    <!--Student Reviews--> 
+    <div class="studentReviews">
+        <h2 id="titleReviews">Student Reviews</h2>
+        
+        <!--Review 1-->
+        <div class="review">
+            <img id="avatar" src="avatar/man1.png" alt="CCReview1">
+            <p id="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <p id="ratings_col1">
+                <span class="bold">AET Specialty: 
+                    <span class="answer">Music and Sound</span>
+                </span><br>
+                <span class="bold">Current School Year: 
+                    <span class="answer">Junior</span>
+                </span><br>
+                <span class="bold">Teacher: 
+                    <span class="answer">Monte Taylor</span>
+                </span><br>
+                <span class="bold">Semester taken: 
+                    <span class="answer">Fall 2019</span>
+                </span><br>
+                <span class="bold">Recommend to a friend: 
+                    <span class="answer">N/A</span>
+                </span><br>
+                <span class="bold">Level of Intensity: 
+                    <span class="answer">
+                        <img src="projects/stars.png" alt="stars">
+                    </span>
+                </span>
+            </p>
+            <p id="ratings_col2">
+                <span class="bold">Projects are done: 
+                    <span class="answer">Individually</span>
+                </span><br>
+                <span class="bold">Quizzes and/or exams:  
+                    <span class="answer">Yes</span>
+                </span><br>
+                <span class="freq">How often? 
+                    <span class="answer">Monthly</span>
+                </span><br>
+                <span class="bold">Attendance mandatory: 
+                    <span class="answer">Yes</span>
+                </span><br>
+                <span class="bold">Readings required: 
+                    <span class="answer">No</span>
+                </span><br>
+                <span class="bold">Personal computer needed: 
+                    <span class="answer">No</span>
+                </span><br>
+            </p>
+        </div>
+    
+        
+    </div>
+    
+    
+    
+    </div>
+    
+    
+    <!--Footer-->
+    <footer class="footer">
+    <p class="footerCopyText">© 2020 Arts and Entertainment Technology Guide</p>
+    <div class="test" <ul class="footer-container">
+      <a class="footerLi" href="#">Home</a>
+      <a class="footerLi" href="#">About Us</a>
+      <a class="footerLi" href="#">Contact Us</a>
+      <a href="#" class="buttonF"><i class="fas fa-pen"></i>Add Review</a></li>
+      </ul>
+    </div>
+    </footer>
+
+</body>
+</html>

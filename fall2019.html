@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AET Course Guide</title>
+  <link rel="stylesheet" type="text/css" href="spring19_stylesheet.css">
+  <link rel="stylesheet" type="text/css" href="mediaQuaries.css">
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300&display=swap" rel="stylesheet">
+
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <script src="https://fontawesome.com"></script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="skrollr/src/skrollr.js"></script>
+
+  <link href="lightbox/css/lightbox.css" rel="stylesheet"/>
+  <script src="lightbox/js/jquery-1.7.2.min.js"></script>
+  <script src="lightbox/js/lightbox.js"></script>
+
+</head>
+
+<body>
+    
+    <!--NAVIGATION BAR-->
+    <div class="container">
+    <header>
+      <a href="#" class="button"><i class="fas fa-pen"></i>Add Review</a>
+      <ul class="nav-container">
+
+        <li><a class="navnav" href="parallax.html">Home</a></li>
+
+          <li class="dropdown">
+          <a href="javascript:void(0)" class="dropbtn">AET Courses<i class="fas fa-chevron-down"></i></a>
+          <div class="dropdown-content">
+            <a href="allcourses.html">All Courses</a>
+            <a href="digvis.html">Digital Visualization</a>
+            <a href="music.html">Music and Sound</a>
+            <a href="gamedesign.html">Game Design</a>
+            <a href="plai.html">PLAI</a>
+          </div>
+        </li>
+
+        <li><a class="navnav" href="instructors.html">Instructors</a></li>
+
+        <li><a href="#">Contact Us</a></li>
+      </ul>
+
+      <a href="parallax.html" class="mainTitle">AET GUIDE</a>
+    </header>
+    </div>
+    
+    <!--COURSES-->
+    <div class="pastProjects">
+        <h1>Fall 2019 Past Projects</h1>
+        <h2>Taylor, Monte</h2>
+        
+        <!--Upload-->
+        <form action="/action_page.php">
+            <input type="file" id="myFile" hidden="hidden">
+            <button type="button" id="upload"><i class="fas fa-upload"></i>Upload Project</button>
+            
+            <script type="text/javascript">
+                const myFileBtn = document.getElementById("myFile");
+                const customBtn = document.getElementById("upload");
+                
+                customBtn.addEventListener("click", function() {
+                    myFileBtn.click();
+                })
+            </script>
+        </form>
+        
+        <div class="grid">
+            <!--Project-->
+            <div class="eachProject">
+                <a href="https://soundcloud.com/watertowermusic/official-album-preview-batman">
+                    <img src="projects/music.png" alt="Project3">
+                    <div class="centered">Anonymous</div>
+                </a>
+            </div>
+        </div>
+    
+    </div>
+
+  
+    
+    <!--FOOTER-->
+    <footer class="footer">
+    <p class="footerCopyText">© 2020 Arts and Entertainment Technology Guide</p>
+    <div class="test" <ul class="footer-container">
+      <a class="footerLi" href="#">Home</a>
+      <a class="footerLi" href="#">About Us</a>
+      <a class="footerLi" href="#">Contact Us</a>
+      <a href="#" class="buttonF"><i class="fas fa-pen"></i>Add Review</a></li>
+      </ul>
+    </div>
+    </footer>
+
+
+
+
+</body>
+
+</html>

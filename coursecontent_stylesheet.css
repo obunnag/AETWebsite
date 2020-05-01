@@ -182,7 +182,7 @@ header {
     line-height: 1.5em;
     margin-top: 30px;
     margin-right: 150px;
-    margin-bottom: 100px;
+    margin-bottom: 2%;
 }
 
 #syllabus {
@@ -216,7 +216,14 @@ a#syllabus {
 
 /* Past Projects */
 .pastProjects {
-    background-color: #F0F0ED;
+    background-color: white;
+}
+
+.pastProjects p {
+    text-align: center;
+    font-family: 'Raleway';
+    font-size: 25px;
+    margin: 50px 300px 50px 300px;
 }
 
 #titleProject {
@@ -276,6 +283,24 @@ a#syllabus {
     opacity: 0.8;
 }
 
+#upload2 {
+    background-color: #E06E1B;
+    font-family: 'Raleway', serif;
+    font-size: 16px;
+    color: #fff;
+    border: none;
+    border-radius: 15px;
+    padding: 9px 17px;
+    display: inline-block;
+    margin: 0px 635px 50px 635px;
+    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.5);
+}
+
+#upload2:hover {
+    background-color: #a75a00;
+    opacity: 0.8;
+}
+
 i.fas.fa-upload::before {
     padding-right: 7px;
 }
@@ -288,6 +313,32 @@ i.fas.fa-upload::before {
     padding-bottom: 70px;
 }
 
+#first {
+    text-align: center;
+    font-family: 'Raleway';
+    font-size: 25px;
+    margin: 50px 300px 50px 300px;
+}
+
+.buttonR {
+    background-color: #E06E1B;
+    font-family: 'Raleway', serif;
+    font-size: 16px;
+    color: #fff;
+    border: none;
+    border-radius: 15px;
+    padding: 9px 17px;
+    display: inline-block;
+    margin: 0px 635px 50px 645px;
+    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.5);
+    text-decoration: none;
+}
+
+.buttonR:hover {
+    background-color: #a75a00;
+    opacity: 0.8;
+}
+
 #titleReviews {
     font-family: 'Raleway', serif;
     font-size: 28px;
@@ -298,7 +349,7 @@ i.fas.fa-upload::before {
 .review {
     background-color: #ffffff;
     font-family: 'Raleway', serif;
-    font-size: 15px;
+    font-size: 14px;
     height: 350px;
     width: 1220px;
     border-radius: 15px;
@@ -309,21 +360,27 @@ i.fas.fa-upload::before {
 
 #avatar {
     max-width: 200px;
-    margin: 70px 50px 50px 60px;
+    margin: 70px 50px 50px 70px;
     display: inline-block;
     float: left;
 }
 
+#paragraph {
+    margin: 30px 150px 0px 400px;
+}
+
 #ratings_col1 {
-/*    margin: 30px 10px;*/
-    margin-top: 70px;
+    margin-top: 20px;
     margin-left: 90px;
+    margin-bottom: 20px;
     line-height: 2.3em;
     display: inline-block;
 }
 
 #ratings_col2 {
     margin-left: 200px;
+    margin-right: 00px;
+    margin-bottom: 20px;
     line-height: 2.3em;
     display: inline-block;
 }

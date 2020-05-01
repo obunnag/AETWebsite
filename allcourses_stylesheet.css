@@ -220,11 +220,29 @@ header {
 }
 
 .eachCourse p {
-    font-size: 13px;
+    font-size: 12px;
     font-weight: 300;
     margin: 0 15px;
     padding-top: 10px;
-    line-height: 18px;
+    line-height: 15px;
+}
+
+#division {
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 15px;
+/*    position: absolute;*/
+/*    bottom: 105px;*/
+}
+
+#learn {
+    transform: translate(-140px, 435px);
+    color: black;
+    font-family: 'Raleway';
+    font-size: 14px;
+    display: inline-block;
+    max-width: 80px;
+    max-height: 20px;
 }
 
 
