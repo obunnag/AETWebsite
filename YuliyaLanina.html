@@ -4,9 +4,9 @@
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>AET Course Guide</title>
-  <link rel="stylesheet" type="text/css" href="profinfo_stylesheet.css">
-  <link rel="stylesheet" type="text/css" href="mediaQuaries.css">
-  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/profinfo.css">
+
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;600;700;800;900&display=swap" rel="stylesheet">
 
   <script src="https://kit.fontawesome.com/a076d05399.js"></script>
   <script src="https://fontawesome.com"></script>
@@ -17,50 +17,57 @@
 </head>
 
 <body>
-    
-    <!--NAVIGATION BAR-->
-    <div class="container">
-    <header>
-      <a href="#" class="button"><i class="fas fa-pen"></i>Add Review</a>
-      <ul class="nav-container">
+  <div class="container-container-home">
+    <div class="topnav" id="myTopnav">
 
-        <li><a class="navnav" href="parallax.html">Home</a></li>
+      <a href="review.html" class="buttonReview button">Add Review<i class="fas fa-pen"></i></a>
+      <a class="contact" href="ContactUs.html">Contact Team</a>
+      <div class="dropdown">
+        <a href="#" class="dropbtn">AET Courses<i class="fas fa-chevron-down"></i></a>
 
-          <li class="dropdown">
-          <a href="javascript:void(0)" class="dropbtn">AET Courses<i class="fas fa-chevron-down"></i></a>
-          <div class="dropdown-content">
-            <a href="allcourses.html">All Courses</a>
-            <a href="digvis.html">Digital Visualization</a>
-            <a href="music.html">Music and Sound</a>
-            <a href="gamedesign.html">Game Design</a>
-            <a href="plai.html">PLAI</a>
-          </div>
-        </li>
+        <div class="dropdown-content">
+          <a href="allcourses.html">All Courses</a>
+          <a href="digitalVisualization.html">Digital Visualization</a>
+          <a href="music.html">Music and Sound</a>
+          <a href="gameDesign.html">Game Design</a>
+          <a href="plai.html">PLAI</a>
+        </div>
+      </div>
+      <a class="navnav" href="instructors.html">Instructors</a>
+      <a class="navnav" href="index.html">Home</a>
 
-        <li><a class="navnav" href="instructors.html">Instructors</a></li>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
 
-        <li><a href="#">Contact Us</a></li>
-      </ul>
-
-      <a href="parallax.html" class="mainTitle">AET GUIDE</a>
-    </header>
+      <a href="index.html" class="logo activeHome">
+        <img src="resources/aet-logo.png" style="width: 200px; height:40px;">
+      </a>
     </div>
-    
+
+
+
     <!--NAME AND ROLE-->
     <div class="instructor">
         <h1>YULIYA LANINA</h1>
         <h2>Multimedia Artist</h2>
-        
+
     </div>
-    
-    <img src="instructors/YuliyaLanina.png" alt="prof">
-    
+
+    <img class="image" src="instructors/YuliyaLanina.png" alt="prof">
+
     <!--INFORMATION-->
     <div class="about">
         <h2>About</h2>
-        <p>Yuliya Lanina is a multimedia artist whose work ranges from paintings and robotic sculptures to video installation and performance. She creates alternate realities in her works—ones based on sexuality, femininity, fetishism, and identity. She has performed and exhibited extensively both nationally and internationally, including SXSW Interactive, Seoul Art Museum, SIGGRAPH Asia, 798 Beijing Biennial (China), Cleveland Institute of Art, Museum Ludwig (Germany), Creative Tech Week (NYC), Blanton Museum of Art (Austin), Fusebox Festival (Austin), and Moscow Museum of Modern Art.</p>
+        <p>Yuliya Lanina is a multimedia artist whose work ranges from
+          paintings and robotic sculptures to video installation and
+          performance. She creates alternate realities in her works—ones
+          based on sexuality, femininity, fetishism, and identity. She has
+          performed and exhibited extensively both nationally and internationally,
+          including SXSW Interactive, Seoul Art Museum, SIGGRAPH Asia,
+          798 Beijing Biennial (China), Cleveland Institute of Art, Museum
+          Ludwig (Germany), Creative Tech Week (NYC), Blanton Museum of Art
+          (Austin), Fusebox Festival (Austin), and Moscow Museum of Modern Art.</p>
     </div>
-    
+
     <div class="grid">
         <div class="column1">
             <h2>Courses Taught</h2>
@@ -69,7 +76,7 @@
             <p>AET 372 SENIOR DESIGN PROJECTS I</p>
             <p>AET 372 SENIOR DESIGN PROJECTS II</p>
         </div>
-        
+
         <div class="column2">
             <h2>Contact</h2>
             <div id="row">
@@ -78,21 +85,36 @@
             </div>
         </div>
     </div>
-    
 
-  
-    
-    <!--FOOTER-->
-    <footer class="footer">
+
+
+
+  </div> <!-- Container div closing tag  -->
+
+  <footer class="footer">
     <p class="footerCopyText">© 2020 Arts and Entertainment Technology Guide</p>
     <div class="test" <ul class="footer-container">
-      <a class="footerLi" href="#">Home</a>
-      <a class="footerLi" href="#">About Us</a>
-      <a class="footerLi" href="#">Contact Us</a>
-      <a href="#" class="buttonF"><i class="fas fa-pen"></i>Add Review</a></li>
+      <a class="footerLi" href="index.html">Home</a>
+      <a class="footerLi" href="aboutUs.html">About Team</a>
+      <a class="footerLi" href="ContactUs.html">Contact Team</a>
+      <a href="review.html" class="buttonF"><i class="fas fa-pen"></i>Add Review</a></li>
       </ul>
     </div>
-    </footer>
+  </footer>
+
+
+  <!-- JavaScript for Top Navigation Bar -->
+  <script>
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+  </script>
+
 
 
 
