@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>AET Course Guide</title>
+    <link rel="stylesheet" type="text/css" href="css/coursecontent.css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://fontawesome.com"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="skrollr/src/skrollr.js"></script>
+
+</head>
+    
+<body>
+
+    <!--NAVIGATION BAR-->
+    <div class="container-container-home">
+  <div class="topnav" id="myTopnav">
+
+    <a href="review.html" class="buttonReview button">Add Review<i class="fas fa-pen"></i></a>
+      
+    <a class="contact" href="ContactUs.html">Contact Team</a>
+      
+    <a class="navnav" href="instructors.html">Instructors</a>
+    
+      
+    <div class="dropdown">
+      <a href="#" class="dropbtn">AET Courses<i class="fas fa-chevron-down"></i></a>
+
+      <div class="dropdown-content">
+        <a href="allcourses.html">All Courses</a>
+        <a href="digvis.html">Digital Visualization</a>
+        <a href="music.html">Music and Sound</a>
+        <a href="gamedesign.html">Game Design</a>
+        <a href="plai.html">PLAI</a>
+      </div>
+    </div>
+      
+    <a class="navnav" href="index.html">Home</a>
+
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+
+    <a href="index.html" class="logo activeHome">
+      <img src="resources/aet-logo.png" style="width: 200px; height:40px;">
+    </a>
+
+  </div>
+        
+    <!--Class Description-->
+    <div class="classDescription">
+        <h2 id="courseName">AET 304 Foundations of Arts and Entertainment Technologies</h2>
+        <h3 id="instructorName">David Cohen, Yuliya Lanina, Matt Smith, Chris Ozley</h3>
+        <div class=classContent>
+            <img id="classImage" src="class_images/aet.jpg" alt="AET">
+            <p id="aboutClass">Team collaboration, vision, and creation will be the focus of this project based course as we examine the intersection of arts and technology. Through a creative lens we will explore way to conceive, develop, and execute new experiences and creations through the integration of interactive systems, music and sound, visualization, projection, digital games, lighting, spatial design, physical computing, immersion, narrative design and much more. As we go through this journey we will also consider the cultural, philosophical, ethical and practical aspects of entertainment technology.</p>
+            <p id="syllabus">Current and Past Syllabi:</p>
+            <a id="syllabus" href="syllabus/general/aet_fa19_cohen.pdf" download>
+                <button class="syllabiButton">Cohen FA 2019</button>
+            </a>
+            <a id="syllabus" href="syllabus/general/aet_sp19.pdf" download>
+                <button class="syllabiButton">Stamps SP 2019</button>
+            </a>
+            <a id="syllabus" href="syllabus/general/aet_fa18.pdf" download>
+                <button class="syllabiButton">Stamps FA 2018</button>
+            </a>
+        </div>
+    </div>
+        
+    
+    <!--Past Projects-->
+    <div class="pastProjects">
+        <h2 id="titleProject">Past Student Projects</h2>
+        
+        <p>Have you taken this class before?</br>
+            Upload your past project!</p>
+        
+        <!--Upload-->
+        <form action="/action_page.php">
+            <input type="file" id="myFile" hidden="hidden">
+            <button type="button" id="upload2"><i class="fas fa-upload"></i>Upload Project</button>
+            
+            <script type="text/javascript">
+                const myFileBtn = document.getElementById("myFile");
+                const customBtn = document.getElementById("upload2");
+                
+                customBtn.addEventListener("click", function() {
+                    myFileBtn.click();
+                })
+            </script>
+        </form>
+    </div>
+
+    <!--Student Reviews--> 
+    <div class="studentReviews">
+        <h2 id="titleReviews">Student Reviews</h2>
+        <p id="first">Be the first to submit a review!</p>
+        <a href="#" class="buttonR"><i class="fas fa-pen"></i>Add Review</a>
+        
+    </div>
+    
+    
+    
+    </div>
+    
+    
+    <!--Footer-->
+    <footer class="footer">
+    <p class="footerCopyText">© 2020 Arts and Entertainment Technology Guide</p>
+    <div class="test" <ul class="footer-container">
+      <a class="footerLi" href="#">Home</a>
+      <a class="footerLi" href="#">About Us</a>
+      <a class="footerLi" href="#">Contact Us</a>
+      <a href="#" class="buttonF"><i class="fas fa-pen"></i>Add Review</a></li>
+      </ul>
+    </div>
+    </footer>
+
+  <!-- JavaScript for Top Navigation Bar -->
+    <script>
+      function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
+      }
+    </script>
+
+</body>
+</html>
